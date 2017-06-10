@@ -1,12 +1,12 @@
 $(window).scroll(function() {
-    $(window).scrollTop() > 500 ? $("#rocket").addClass("show") : $("#rocket").removeClass("show");
+    $(window).scrollTop() > 500 ? $("#totop").addClass("show") : $("#totop").removeClass("show");
 });
-$("#rocket").click(function() {
-    $("#rocket").addClass("launch");
+$("#totop").click(function() {
+    //$("#totop").addClass("launch");
     $("html, body").animate({
         scrollTop: 0
     }, 500, function() {
-        $("#rocket").removeClass("show launch");
+        //$("#totop").removeClass("show launch");
     });
     return false;
 });
