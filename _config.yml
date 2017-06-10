@@ -34,6 +34,7 @@ hide_post_sidebar: true
 
 widgets: ## Six widgets in sidebar provided: search, category, tag, recent_posts, rencent_comments and links.
   - search
+  - bookmarks
   - category
   - tag
   - recent_posts
@@ -53,6 +54,12 @@ links:
     url: http://www.example2.com/
   - title: site-name3
     url: http://www.example3.com/
+    
+bookmarks:
+  - title: github博客
+    url: http://jerry011235.github.io/
+  - title: 222
+    url: http://starwindy.oschina.io/
 
 timeline:
   - num: 1

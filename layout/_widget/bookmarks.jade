@@ -1,0 +1,6 @@
+.widget
+  .widget-title
+    i(class='fa fa-bookmark')= ' ' + __('bookmarks')    
+  - for (var i in theme.bookmarks)
+      ul
+      a(href='#{theme.bookmarks[i].url}' title='#{theme.bookmarks[i].title}' target='_blank') #{theme.bookmarks[i].title}    
