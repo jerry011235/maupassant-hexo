@@ -78,8 +78,9 @@ div {
             }
         }
         .description {
-            margin: .2em 0 0;
-            color: #999;
+            margin: 11px 3px;
+            color: #322f2f;
+            font-size: 14px
         }
     }
     #nav-menu {
@@ -107,7 +108,7 @@ div {
 }
 
 #sidebar {
-    border-left: 1px solid #ddd;
+    border-left: 0px solid #ddd;
     padding-left: 35px;
     margin-top: 40px;
     padding-bottom: 20px;
@@ -146,6 +147,9 @@ div {
                 margin: 5px 0;
                 line-height: 1.5;
             }
+        }
+        .category-list-child {
+             margin-left: 20px;
         }
         .category-list-count {
              padding-left: 5px;
