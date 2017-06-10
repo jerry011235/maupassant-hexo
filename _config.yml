@@ -29,8 +29,6 @@ menu:
   - page: rss
     directory: atom.xml
     icon: fa-rss
-    
-hide_post_sidebar: true
 
 widgets: ## Six widgets in sidebar provided: search, category, tag, recent_posts, rencent_comments and links.
   - search
