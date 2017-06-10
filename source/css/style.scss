@@ -83,6 +83,15 @@ div {
             font-size: 14px
         }
     }
+    .social-icons {
+            position: relative;
+            left: -53px;
+            img.icon {
+            width: 20px;
+            height: 20px;
+            margin-left: 12px;        
+            }
+    }     
     #nav-menu {
         margin: 10px 0 -1px;
         padding: 0;

@@ -39,6 +39,12 @@ widgets: ## Six widgets in sidebar provided: search, category, tag, recent_posts
   - recent_posts
   - recent_comments
   - links
+## Social Icons
+social_icons:
+  - ['/images/github.png', 'https://github.com/jerry011235']
+  - ['/images/zhihu.png', 'https://www.zhihu.com/people/istarsky/answers']
+  - ['/images/jianshu.png', 'http://www.jianshu.com/u/e2bf41f8a517']
+  - ['/images/weibo.png', 'http://weibo.com/istarsky']
 
 links:
   - title: site-name1
