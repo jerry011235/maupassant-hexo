@@ -1213,7 +1213,7 @@ pre {
     margin: -10px 0;
     padding: 5px 10px;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 16px;
     float: right;
     &:after {
         font-family: "FontAwesome";
@@ -1222,7 +1222,7 @@ pre {
     }
     &:hover {
         background: #F8F8F8;
-        border-bottom-color: #D26911;
+        //border-bottom-color: #D26911;
     }
 }
 
