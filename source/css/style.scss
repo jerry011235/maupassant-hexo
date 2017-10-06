@@ -605,11 +605,12 @@ div {
         }
     }
     .disqus-comment-count {
+        display: none;
         padding: 0;
         margin: 15px 0 0;
         color: #6E7173;
         float: right;
-        display: inline;
+        //display: inline;
         text-indent: .15em;
         &:before {
           font-family: "FontAwesome";
@@ -2129,4 +2130,86 @@ em.search-keyword {
 
 h1 ,h2 ,h3 ,h4 ,h5 ,h6{
     font-weight: normal;
+}
+
+
+//搜索页面
+input {
+    outline: none;
+}
+input[type=search] {
+    -webkit-appearance: textfield;
+    -webkit-box-sizing: content-box;
+    font-size: 100%;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+    display: none;
+}
+
+input[type=search] {
+    background-image: url(/img/Search.png);
+  background-size: 20px 20px;
+  background-position: 90%;
+  background-repeat: no-repeat;
+    border: solid 1px #ccc;
+    padding: 9px 10px 9px 32px;
+    width: 350px;
+
+    -webkit-border-radius: 10em;
+    -moz-border-radius: 10em;
+    border-radius: 10em;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+}
+input[type=search]:focus {
+  background-position: 95%;
+    width: 600px;
+    background-color: #fff;
+    border-color: #6dcff6;    
+    -webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+    -moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+    box-shadow: 0 0 5px rgba(109,207,246,.5);    
+}
+/* small*/
+@media print, screen and (max-width: 35.5em) {
+      input[type=search]:focus,
+      input[type=search] {
+                width: 250px;
+                background-position: 95%;
+      }
+
+
+}
+
+
+//关于页面
+.myslogan{
+    text-align: center;
+    margin-top: -100px;
+    font-family: "KaiTi";
+    font-size: 3em;
+}
+
+.mail{
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff !important;
+    font-size: 20px;
+    background: #3498db;
+    padding: 10px 20px;
+    padding-bottom: 10px!important;
+    text-decoration: none;
+    margin-left: 230px;
+}
+
+/* small*/
+@media print, screen and (max-width: 35.5em) {
+.mail{
+    margin-left: 0px;
+}
+
+
 }
