@@ -448,7 +448,6 @@ h1 ,h2 ,h3 ,h4 ,h5 ,h6{
     .body_container {
       padding: 0 95px;
     }
-
     #header .nav-bar{
         display: block;
         font-size: 0;
@@ -474,7 +473,7 @@ h1 ,h2 ,h3 ,h4 ,h5 ,h6{
         border-left-width: 0px;
     }
     #header {
-        padding: 38px 0 0;
+        padding: 20px 0px;
         .site-name {
             margin-bottom: 20px;
             text-align: center;
@@ -489,13 +488,23 @@ h1 ,h2 ,h3 ,h4 ,h5 ,h6{
                 font-size: 13px;
             }
         }
+    } 
+    
+    .styles__YoYoEmailInput___1WNqQ{
+      top: -155px !important;
+      left: 82px !important;
     }
+    
+
 }
 
 /* small*/
 @media print, screen and (max-width: 35.5em) {
     .body_container {
       padding: 0 35px;
+    }
+    #header {
+      padding: 10px 0px;
     }
     #header .nav-bar{
         display: block;
@@ -507,6 +516,10 @@ h1 ,h2 ,h3 ,h4 ,h5 ,h6{
     }
     #toc {
         display: none;
+    }
+    
+    .styles__YoYoEmailInput___1WNqQ{
+      left: 55px !important;
     }
 
 }
@@ -1770,5 +1783,20 @@ input[type=search]:focus {
       transform: scale(1.05);
     }
   }
+}
+
+
+//YoYo评论
+
+#YoYo{
+  margin-top: 35px;
+}
+.styles__YoYoEmailInput___1WNqQ{
+    position: relative;
+    top: -140px;
+    left: 63px;
+}
+.styles__YoYoBoxContainer___2dmmj {
+    border: 0px !important;
 }
 

@@ -63,6 +63,11 @@ if page.mathjax
 
 if page.mathjax2
   include mathjax2.pug
+  
+if theme.instantclick == true
+  script(src='//cdnjs.loli.net/ajax/libs/instantclick/3.0.1/instantclick.min.js', data-no-instant='')
+  script(data-no-instant='').
+    InstantClick.init('mousedown')
 
 script(type='text/javascript', src=url_for(theme.js) + '/codeblock-resizer.js' + '?v=' + theme.version)
 script(type='text/javascript', src=url_for(theme.js) + '/smartresize.js' + '?v=' + theme.version)
