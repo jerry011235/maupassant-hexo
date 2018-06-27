@@ -1,0 +1,34 @@
+mixin a_with_current(href, content, id)
+  - var url = url_for(href)
+  if (href == '.' && (is_home() || is_post())) || is_current(href)
+    a.current(href=url)
+      !=content
+  else if (href == 'archives/' && is_tag())
+    a.current(href=url)
+      !=content
+  else if (href == 'archives/' && is_category())
+    a.current(href=url)
+      !=content
+  else
+    a(href=url)
+      !=content
+
+mixin title(page)
+  if page
+    if page.title
+      = page.title
+    else
+      = _p('no-title')
+
+      
+mixin home()
+  .site-name
+    h1.hidden= current_title
+    a#logo(href=url_for('.'))= config.title
+    p.description= config.subtitle  
+    
+mixin post()
+  .site-name
+    h1.hidden= current_title
+    a#logo(href=url_for('.') style='color: green')= config.title
+    p.description(style='color: green')= config.subtitle  
